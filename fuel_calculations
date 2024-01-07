@@ -1,0 +1,14 @@
+beginning_odometer_reading = float(input("Please input the beginning odometer reading:"))
+ending_odometer_reading = float(input("Please input the ending odometer reading:"))
+gallons_to_fill_tank = float(input("Please enter the number of gallons to fill the tank:"))
+cost_per_gallon = float(input("Please enter the cost per gallon of fuel:"))
+miles_per_year = float(input("Please enter the number of miles driver per year:"))
+
+calc_mpg = ((ending_odometer_reading) - (beginning_odometer_reading)) / (gallons_to_fill_tank)
+print("Average Miles Per Gallon:" , calc_mpg)
+
+calc_cost_per_mile = cost_per_gallon / (calc_mpg) 
+print("Fuel Cost Per Mile" , calc_cost_per_mile)
+
+calc_total_cost_gas= calc_cost_per_mile * miles_per_year
+print("Annual Cost of Fuel" , calc_total_cost_gas)
